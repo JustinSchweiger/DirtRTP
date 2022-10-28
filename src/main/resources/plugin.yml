@@ -1,0 +1,20 @@
+name: Dirt-RTP
+version: '${version}'
+main: net.dirtcraft.plugins.dirtrtp.DirtRtp
+api-version: 1.16
+authors: [ DeJustinHD ]
+description: Adds rtp functionality to DirtCraft 1.16.5+
+commands:
+    dirtrtp:
+        description: Main command for DirtRTP
+        aliases: [ rtp ]
+permissions:
+    dirtrtp.rtp:
+        description: Allows the player to use /rtp
+    dirtrtp.reload:
+        description: Allows the player to use /rtp reload
+    dirtrtp.chaosisland:
+        description: Allows the player to use /rtp chaos-island
+    dirtrtp.bypass:
+        description: Allows the player to bypass the cooldown
+

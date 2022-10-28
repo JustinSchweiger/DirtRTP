@@ -1,0 +1,37 @@
+# Configuration file for Dirt-RTP
+
+[general]
+# Wether debug-messages should be printed to the console (has some usefull information)
+debug = true
+# Wether debug-messages should be colored in the console
+coloredDebug = true
+# Cooldown for the rtp command in seconds.
+cooldown = 60
+
+[sound]
+# Wether a sound should be played when a player is teleported.
+playSuccessSound = true
+# The sound that should be played when a player is teleported.
+# For this to do something the value above needs to be true.
+successSound = "minecraft:entity.enderman.teleport"
+# Wether a sound should be played when the teleportation is canceled.
+playErrorSound = true
+# The sound that should be played when a teleportation is cancelled.
+# For this to do something the value above needs to be true.
+errorSound = "minecraft:block.anvil.place"
+
+[whitelistedWorlds]
+# Names of the worlds that are whitelisted for random teleportation.
+worlds = ["world"]
+# Names of the worlds the /chaos-island-rtp command should be available in.
+chaosIslandWorlds = ["world/DIM1"]
+
+[chaosIslands]
+# Enable this if the server has DraconicEvolution Chaos Islands and you want players to be able to random teleport to them.
+enabled = false
+# The cooldown for the chaos island teleport command in seconds. Default: 30min = 1800s
+cooldown = 1800
+# Every how many blocks are chaos islands generated?
+distance = 10000
+
+
